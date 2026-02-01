@@ -1,0 +1,54 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 6;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2009.vpi";
+S_000001f2cbc367b0 .scope package, "$unit" "$unit" 2 1;
+ .timescale -6 -6;
+S_000001f2cbc36940 .scope module, "OurSubtractorVerilog" "OurSubtractorVerilog" 3 20;
+ .timescale -6 -6;
+    .port_info 0 /INPUT 4 "a";
+    .port_info 1 /INPUT 4 "b";
+    .port_info 2 /OUTPUT 4 "compout";
+    .port_info 3 /OUTPUT 4 "subout";
+L_000001f2cbbeabf0 .functor BUFZ 4, L_000001f2cbcc3b60, C4<0000>, C4<0000>, C4<0000>;
+v000001f2cbc36ad0_0 .net "SYNTHESIZED_WIRE_0", 3 0, L_000001f2cbcc3b60;  1 drivers
+o000001f2cbc36fd8 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v000001f2cbc36b70_0 .net "a", 3 0, o000001f2cbc36fd8;  0 drivers
+o000001f2cbc37158 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v000001f2cbc7b840_0 .net "b", 3 0, o000001f2cbc37158;  0 drivers
+v000001f2cbc7b8e0_0 .net "compout", 3 0, L_000001f2cbbeabf0;  1 drivers
+v000001f2cbc7b980_0 .net "subout", 3 0, L_000001f2cbc7ba20;  1 drivers
+S_000001f2cbc35650 .scope module, "b2v_inst" "OurAdder" 3 40, 4 1 0, S_000001f2cbc36940;
+ .timescale -6 -6;
+    .port_info 0 /INPUT 4 "a";
+    .port_info 1 /INPUT 4 "b";
+    .port_info 2 /OUTPUT 4 "sum";
+v000001f2cbc03290_0 .net "a", 3 0, o000001f2cbc36fd8;  alias, 0 drivers
+v000001f2cbc02ea0_0 .net "b", 3 0, L_000001f2cbcc3b60;  alias, 1 drivers
+v000001f2cbbebf10_0 .net "sum", 3 0, L_000001f2cbc7ba20;  alias, 1 drivers
+L_000001f2cbc7ba20 .arith/sum 4, o000001f2cbc36fd8, L_000001f2cbcc3b60;
+S_000001f2cbc357e0 .scope module, "b2v_inst2" "OurComplementer" 3 46, 5 1 0, S_000001f2cbc36940;
+ .timescale -6 -6;
+    .port_info 0 /INPUT 4 "a";
+    .port_info 1 /OUTPUT 4 "compout";
+L_000001f2cbbeaa50 .functor NOT 4, o000001f2cbc37158, C4<0000>, C4<0000>, C4<0000>;
+v000001f2cbbeb050_0 .net *"_ivl_0", 3 0, L_000001f2cbbeaa50;  1 drivers
+L_000001f2cbc7bb58 .functor BUFT 1, C4<0001>, C4<0>, C4<0>, C4<0>;
+v000001f2cbbea9b0_0 .net/2u *"_ivl_2", 3 0, L_000001f2cbc7bb58;  1 drivers
+v000001f2cbc35970_0 .net "a", 3 0, o000001f2cbc37158;  alias, 0 drivers
+v000001f2cbc35a10_0 .net "compout", 3 0, L_000001f2cbcc3b60;  alias, 1 drivers
+L_000001f2cbcc3b60 .arith/sum 4, L_000001f2cbbeaa50, L_000001f2cbc7bb58;
+# The file index is used to find the file name in the following table.
+:file_names 6;
+    "N/A";
+    "<interactive>";
+    "-";
+    "D:/METU-EE/EE-Sem-6/EE314/EXP0/EXP0_2604163/CombinedTest/Tests/../HDL/OurSubtractorVerilog.v";
+    "D:/METU-EE/EE-Sem-6/EE314/EXP0/EXP0_2604163/CombinedTest/Tests/../HDL/OurAdder.v";
+    "D:/METU-EE/EE-Sem-6/EE314/EXP0/EXP0_2604163/CombinedTest/Tests/../HDL/OurComplementer.v";

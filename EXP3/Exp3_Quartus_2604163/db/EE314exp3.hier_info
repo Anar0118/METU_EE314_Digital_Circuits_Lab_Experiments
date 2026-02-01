@@ -1,0 +1,35 @@
+|ALU
+Control[0] => Mux0.IN5
+Control[0] => Mux1.IN5
+Control[0] => Mux2.IN5
+Control[0] => Mux3.IN5
+Control[1] => Mux0.IN4
+Control[1] => Mux1.IN4
+Control[1] => Mux2.IN4
+Control[1] => Mux3.IN4
+DATA_A[0] => Add0.IN4
+DATA_A[0] => Add1.IN8
+DATA_A[1] => Add0.IN3
+DATA_A[1] => Add1.IN7
+DATA_A[2] => Add0.IN2
+DATA_A[2] => Add1.IN6
+DATA_A[3] => Add0.IN1
+DATA_A[3] => Add1.IN5
+DATA_B[0] => Add0.IN8
+DATA_B[0] => Add1.IN3
+DATA_B[0] => Mux3.IN2
+DATA_B[1] => Add0.IN7
+DATA_B[1] => Add1.IN2
+DATA_B[1] => Mux2.IN2
+DATA_B[2] => Add0.IN6
+DATA_B[2] => Add1.IN1
+DATA_B[2] => Mux1.IN2
+DATA_B[3] => Add0.IN5
+DATA_B[3] => Mux0.IN3
+DATA_B[3] => Add1.IN4
+Result[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+Result[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Result[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Result[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

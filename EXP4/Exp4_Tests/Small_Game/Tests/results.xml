@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1747603625" />
+    <testcase name="Small_Game_test" classname="Small_Game_test" file="D:\METU-EE\EE-Sem-6\EE314\EXP4\Exp4_Tests\Small_Game\Tests\Small_Game_test.py" lineno="6" time="0.012073278427124023" sim_time_ns="152000" ratio_time="12589786.68615099" />
+  </testsuite>
+</testsuites>

@@ -1,0 +1,5 @@
+module mux#(parameter W=8)(
+	input[] select,
+	input[] mux_input,
+	output[] mux_output
+);

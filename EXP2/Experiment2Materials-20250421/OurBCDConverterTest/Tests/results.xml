@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1745417250" />
+    <testcase name="test_bcd_converter" classname="test_bcd_converter" file="D:\METU-EE\EE-Sem-6\EE314\EXP2\Experiment2Materials-20250421\OurBCDConverterTest\Tests\test_bcd_converter.py" lineno="44" time="0.005176067352294922" sim_time_ns="17000" ratio_time="3284346.752648549" />
+  </testsuite>
+</testsuites>

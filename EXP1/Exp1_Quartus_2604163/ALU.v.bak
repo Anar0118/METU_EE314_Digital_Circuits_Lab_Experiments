@@ -1,0 +1,14 @@
+module ALU #(
+    parameter W = 4
+)(// This is a template. 
+// You can modify the input-output declerations(width etc.) without changing the names.
+    input   DATA_A,
+    input   DATA_B,
+    input   control,
+    output  OUT,
+    output  CO, OVF, N, Z
+);
+
+// Fill here
+
+endmodule

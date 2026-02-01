@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1742673889" />
+    <testcase name="logic_unit_test" classname="LU_test" file="D:\METU-EE\EE-Sem-6\EE314\EXP1\Experiment1Materialsv2-20250317\LUTest\Tests\LU_test.py" lineno="96" time="1.3254218101501465" sim_time_ns="51000" ratio_time="38478.31657019633" />
+  </testsuite>
+</testsuites>

@@ -1,0 +1,29 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 6;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2009.vpi";
+S_0000024025b26e10 .scope package, "$unit" "$unit" 2 1;
+ .timescale -6 -6;
+S_0000024025af2aa0 .scope module, "OurAdder" "OurAdder" 3 1;
+ .timescale -6 -6;
+    .port_info 0 /INPUT 4 "a";
+    .port_info 1 /INPUT 4 "b";
+    .port_info 2 /OUTPUT 4 "sum";
+o0000024025b26fa8 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v0000024025af3290_0 .net "a", 3 0, o0000024025b26fa8;  0 drivers
+o0000024025b26fd8 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v0000024025af2c30_0 .net "b", 3 0, o0000024025b26fd8;  0 drivers
+v0000024025af2cd0_0 .net "sum", 3 0, L_0000024025af2d70;  1 drivers
+L_0000024025af2d70 .arith/sum 4, o0000024025b26fa8, o0000024025b26fd8;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "-";
+    "D:/METU-EE/EE-Sem-6/EE314/EXP0/EXP0_2604163/AdderTest/Tests/../HDL/OurAdder.v";

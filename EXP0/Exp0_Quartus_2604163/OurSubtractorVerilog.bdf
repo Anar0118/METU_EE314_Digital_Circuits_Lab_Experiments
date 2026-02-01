@@ -1,0 +1,184 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 184 744 352 760)
+	(text "INPUT" (rect 125 0 167 15)(font "Arial" (font_size 6)))
+	(text "b[3..0]" (rect 5 0 52 21)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 157 22)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 176 616 344 632)
+	(text "INPUT" (rect 125 0 167 15)(font "Arial" (font_size 6)))
+	(text "a[3..0]" (rect 5 0 52 21)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 157 22)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 1096 616 1281 632)
+	(text "OUTPUT" (rect 1 0 58 15)(font "Arial" (font_size 6)))
+	(text "subout[3..0]" (rect 90 0 179 21)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 720 744 917 760)
+	(text "OUTPUT" (rect 1 0 58 15)(font "Arial" (font_size 6)))
+	(text "compout[3..0]" (rect 90 0 191 16)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(symbol
+	(rect 864 592 1024 672)
+	(text "OurAdder" (rect 5 0 78 16)(font "Arial" ))
+	(text "inst" (rect 8 64 33 80)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "a[3..0]" (rect 0 0 47 16)(font "Arial" ))
+		(text "a[3..0]" (rect 21 27 68 43)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "b[3..0]" (rect 0 0 47 16)(font "Arial" ))
+		(text "b[3..0]" (rect 21 43 68 59)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 160 32)
+		(output)
+		(text "sum[3..0]" (rect 0 0 68 16)(font "Arial" ))
+		(text "sum[3..0]" (rect 82 27 150 43)(font "Arial" ))
+		(line (pt 160 32)(pt 144 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 144 64))
+	)
+)
+(symbol
+	(rect 384 720 568 800)
+	(text "OurComplementer" (rect 5 0 141 16)(font "Arial" ))
+	(text "inst2" (rect 8 64 44 85)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "a[3..0]" (rect 0 0 47 16)(font "Arial" ))
+		(text "a[3..0]" (rect 21 27 68 43)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "compout[3..0]" (rect 0 0 101 16)(font "Arial" ))
+		(text "compout[3..0]" (rect 78 27 179 43)(font "Arial" ))
+		(line (pt 184 32)(pt 168 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 64))
+	)
+)
+(connector
+	(pt 344 624)
+	(pt 864 624)
+	(bus)
+)
+(connector
+	(pt 864 640)
+	(pt 640 640)
+	(bus)
+)
+(connector
+	(pt 640 640)
+	(pt 640 752)
+	(bus)
+)
+(connector
+	(pt 568 752)
+	(pt 640 752)
+	(bus)
+)
+(connector
+	(pt 640 752)
+	(pt 720 752)
+	(bus)
+)
+(connector
+	(pt 1024 624)
+	(pt 1096 624)
+	(bus)
+)
+(connector
+	(pt 352 752)
+	(pt 384 752)
+	(bus)
+)
+(junction (pt 640 752))
+(text "Use the Orthogonal Bus Tool to make the connections." (rect 312 384 772 407)(font "Intel Clear" (font_size 8)))
+(text "Final stage output" (rect 888 240 1041 263)(font "Intel Clear" (font_size 8)))
+(text "This is a template. You must specify the bit widths of the input-output yourself. But DO NOT CHANGE THE NAMES. " (rect 200 176 1173 199)(font "Intel Clear" (font_size 8)))
+(text "1- You are expected tp design a subtractor using the complementer and the adder you have designed." (rect 200 224 1073 247)(font "Intel Clear" (font_size 8)))
+(text "2- More specifically you are expected to subtract b from a. (a-b)" (rect 200 248 740 271)(font "Intel Clear" (font_size 8)))
+(text "3- You can access your created symbols for OurAdder and OurComplementer from the Symbol Tool." (rect 200 272 1051 295)(font "Intel Clear" (font_size 8)))
+(text "4- Add the symbols and use the Orthogonal Bus Tool to make the connections that would create a subtractor." (rect 200 296 1127 319)(font "Intel Clear" (font_size 8)))
+(text "5- Connect the subtractor result to the output port \"subout\"." (rect 200 320 714 343)(font "Intel Clear" (font_size 8)))
+(text "6- Additionally, you should connect the output of the complementer to the output port \"compout\" for testbenching purposes." (rect 200 344 1266 367)(font "Intel Clear" (font_size 8)))
+(text "Connect the output of the complementer to this pin as well." (rect 888 320 1394 343)(font "Intel Clear" (font_size 8)))
+(text "You can delete the text boxes if you want. They do not affect the design." (rect 280 416 893 439)(font "Intel Clear" (font_size 8)))

@@ -1,0 +1,23 @@
+module Counter2 #(parameter W = 8)
+(
+input clk,
+input reset,
+input [1:0] mode, // 00:hold, 01:inc, 10:dec
+output reg [W-1:0] count
+);
+
+always @(posedge clk or posedge reset) begin
+    if (reset) begin
+        count <= 0;
+    end
+	 
+	 else begin
+        case (mode)
+            2'b01: count <= count + 1;
+            2'b10: count <= count - 1;
+            default: count <= count; // hold
+        endcase
+    end
+end
+
+endmodule

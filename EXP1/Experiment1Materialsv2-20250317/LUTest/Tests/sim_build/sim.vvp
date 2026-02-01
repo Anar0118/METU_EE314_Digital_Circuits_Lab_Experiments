@@ -1,0 +1,57 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 6;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2009.vpi";
+S_00000249b0f32af0 .scope package, "$unit" "$unit" 2 1;
+ .timescale -6 -6;
+S_00000249b0f32c80 .scope module, "Logic_Unit" "Logic_Unit" 3 1;
+ .timescale -6 -6;
+    .port_info 0 /INPUT 4 "DATA_A";
+    .port_info 1 /INPUT 4 "DATA_B";
+    .port_info 2 /INPUT 1 "control";
+    .port_info 3 /OUTPUT 4 "OUT";
+    .port_info 4 /OUTPUT 1 "N";
+    .port_info 5 /OUTPUT 1 "Z";
+P_00000249b0f65f10 .param/l "W" 0 3 1, +C4<00000000000000000000000000000100>;
+o00000249b0f66fd8 .functor BUFZ 4, C4<zzzz>; HiZ drive
+o00000249b0f67008 .functor BUFZ 4, C4<zzzz>; HiZ drive
+L_00000249b0e4bf70 .functor OR 4, o00000249b0f66fd8, o00000249b0f67008, C4<0000>, C4<0000>;
+L_00000249b0e48230 .functor AND 4, o00000249b0f66fd8, o00000249b0f67008, C4<1111>, C4<1111>;
+v00000249b0f330e0_0 .net "DATA_A", 3 0, o00000249b0f66fd8;  0 drivers
+v00000249b0e48190_0 .net "DATA_B", 3 0, o00000249b0f67008;  0 drivers
+v00000249b0f32e10_0 .net "N", 0 0, L_00000249b0f634d0;  1 drivers
+v00000249b0f32eb0_0 .net "OUT", 3 0, L_00000249b0f63430;  1 drivers
+v00000249b0f62db0_0 .net "Z", 0 0, L_00000249b0f63bb0;  1 drivers
+v00000249b0f62e50_0 .net *"_ivl_0", 3 0, L_00000249b0e4bf70;  1 drivers
+L_00000249b0fad058 .functor BUFT 1, C4<0000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v00000249b0f62ef0_0 .net *"_ivl_11", 27 0, L_00000249b0fad058;  1 drivers
+L_00000249b0fad0a0 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v00000249b0f62f90_0 .net/2u *"_ivl_12", 31 0, L_00000249b0fad0a0;  1 drivers
+v00000249b0f63030_0 .net *"_ivl_14", 0 0, L_00000249b0f64010;  1 drivers
+L_00000249b0fad0e8 .functor BUFT 1, C4<01>, C4<0>, C4<0>, C4<0>;
+v00000249b0f63890_0 .net/2s *"_ivl_16", 1 0, L_00000249b0fad0e8;  1 drivers
+L_00000249b0fad130 .functor BUFT 1, C4<00>, C4<0>, C4<0>, C4<0>;
+v00000249b0f640b0_0 .net/2s *"_ivl_18", 1 0, L_00000249b0fad130;  1 drivers
+v00000249b0f639d0_0 .net *"_ivl_2", 3 0, L_00000249b0e48230;  1 drivers
+v00000249b0f63cf0_0 .net *"_ivl_20", 1 0, L_00000249b0f63930;  1 drivers
+v00000249b0f63a70_0 .net *"_ivl_8", 31 0, L_00000249b0f631b0;  1 drivers
+o00000249b0f67278 .functor BUFZ 1, C4<z>; HiZ drive
+v00000249b0f63f70_0 .net "control", 0 0, o00000249b0f67278;  0 drivers
+L_00000249b0f63430 .functor MUXZ 4, L_00000249b0e48230, L_00000249b0e4bf70, o00000249b0f67278, C4<>;
+L_00000249b0f634d0 .part L_00000249b0f63430, 3, 1;
+L_00000249b0f631b0 .concat [ 4 28 0 0], L_00000249b0f63430, L_00000249b0fad058;
+L_00000249b0f64010 .cmp/eq 32, L_00000249b0f631b0, L_00000249b0fad0a0;
+L_00000249b0f63930 .functor MUXZ 2, L_00000249b0fad130, L_00000249b0fad0e8, L_00000249b0f64010, C4<>;
+L_00000249b0f63bb0 .part L_00000249b0f63930, 0, 1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "-";
+    "D:/METU-EE/EE-Sem-6/EE314/EXP1/Experiment1Materialsv2-20250317/LUTest/Tests/../HDL/Logic_Unit.v";

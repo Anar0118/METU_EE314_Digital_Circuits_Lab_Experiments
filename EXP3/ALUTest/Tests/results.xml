@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1746375526" />
+    <testcase name="test_alu_width_variations" classname="test_alu" file="D:\METU-EE\EE-Sem-6\EE314\EXP3\ALUTest\Tests\test_alu.py" lineno="45" time="0.025522470474243164" sim_time_ns="90000" ratio_time="3526304.4026567275" />
+  </testsuite>
+</testsuites>

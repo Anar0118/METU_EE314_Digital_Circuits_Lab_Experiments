@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1741508887" />
+    <testcase name="complementer_modeled_test" classname="Complementer_test" file="C:\Users\ASUS\Desktop\EXP0_Student\ComplementerTest\Tests\Complementer_test.py" lineno="1" time="0.3804025650024414" sim_time_ns="51000" ratio_time="134068.49661929248" />
+  </testsuite>
+</testsuites>

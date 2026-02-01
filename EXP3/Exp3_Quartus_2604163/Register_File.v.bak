@@ -1,0 +1,18 @@
+module Register_File #(// This is a template. 
+// You can modify the input-output declerations(width etc.) without changing the names.
+    parameter W = 4                 // Data width parameter (default 4 bits)
+) (
+    input CLK,                 // Clock signal
+    input Reset,               // Reset signal (active high)
+    input Data,        // W-bit data input
+    input Destination_Select,  // 3-bit write address
+    input Write_Enable,        // Write enable signal
+    input Source_Select_0,  // 3-bit read address for port 0
+    input Source_Select_1,  // 3-bit read address for port 1
+    output Out_0,       // W-bit output for port 0
+    output Out_1        // W-bit output for port 1
+);
+
+// Fill here
+
+endmodule

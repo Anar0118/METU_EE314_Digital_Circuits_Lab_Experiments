@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1741514867" />
+    <testcase name="complementer_modeled_test" classname="Subtractor_test" file="C:\Users\ASUS\Desktop\EXP0_Student\CombinedTest\Tests\Subtractor_test.py" lineno="1" time="0.6974072456359863" sim_time_ns="51000" ratio_time="73128.00421723693" />
+  </testsuite>
+</testsuites>

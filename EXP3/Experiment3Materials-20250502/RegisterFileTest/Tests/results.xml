@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1746376882" />
+    <testcase name="test_register_file" classname="Register_File_test" file="D:\METU-EE\EE-Sem-6\EE314\EXP3\Experiment3Materials-20250502\RegisterFileTest\Tests\Register_File_test.py" lineno="6" time="0.04721522331237793" sim_time_ns="929000" ratio_time="19675857.37874618" />
+  </testsuite>
+</testsuites>

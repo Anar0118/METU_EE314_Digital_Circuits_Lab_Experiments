@@ -1,0 +1,10 @@
+module OurCodedConverter (// This is a template. 
+// You can modify the input-output declerations(width etc.) without changing the names.
+
+    input inencoder,     // 16-bit input for Encoder
+    output outdecoder    // 16-bit output from Decoder
+);
+
+//Fill Here
+
+endmodule

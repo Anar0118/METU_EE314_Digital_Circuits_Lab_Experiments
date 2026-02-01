@@ -1,0 +1,8 @@
+
+State Machine - |EE314exp4|Small_Game:my_game|CS
+Name CS.S_Attack_start CS.S_Right CS.S_Left CS.S_IDLE CS.S_Attack_active 
+CS.S_IDLE 0 0 0 0 0 
+CS.S_Left 0 0 1 1 0 
+CS.S_Right 0 1 0 1 0 
+CS.S_Attack_start 1 0 0 1 0 
+CS.S_Attack_active 0 0 0 1 1 

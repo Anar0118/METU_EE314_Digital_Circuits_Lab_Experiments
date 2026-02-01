@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1742950759" />
+    <testcase name="arithmetic_unit_test" classname="AU_test" file="D:\METU-EE\EE-Sem-6\EE314\EXP1\Experiment1Materialsv2-20250317\AUTest\Tests\AU_test.py" lineno="122" time="1.7269926071166992" sim_time_ns="51000" ratio_time="29531.104991321914" />
+  </testsuite>
+</testsuites>
